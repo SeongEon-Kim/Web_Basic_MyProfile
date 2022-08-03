@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: 'Libre Baskerville', 'MaruBuri-Regular', serif;
+}
+
+
+
+#my_goal {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#my_profile {
+    width: 100%;
+    height: 60vh;
+    /* 만약 타켓 요소의 너비값과 높이값을 뷰포트의 너비값과 높이값에 맞게 사용할 수 있다면 어떨까요? 
+    바로 vh와 vw 단위가 그런 의도에 맞는 단위이고 vh 요소는 높이값의 100분의 1의 단위입니다. 
+    예를 들어 브라우저 높이값이 900px일때 1vh는 9px이라는 뜻이 되지요. 그와 유사하게 뷰포트의 너비값이 750px이면 
+    1vw는 7.5px이 됩니다. */
+    background-color: antiquewhite;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_profile_img {
+    padding: 10px;
+}
+
+#my_profile_info {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#my_profile_info_detail {
+    padding: 20px;
+}
+
+.my_profile_info_detail_box {
+    text-align: center;
+    border: 10px solid antiquewhite;
+    background-color: #e3cab8;
+    border-radius: 20px 40px 60px 80px;
+
+}
+
+.my_profile_topic {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.my_profile_content {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#my_profile_button {
+    padding: 20px;
+}
+
+@media (max-width: 890px) {
+    #my_profile {
+        /* width: 100%; */
+        background-color: blue;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #my_profile_button {
+        padding: 20px;
+        /* width: 70%; */
+        text-align: center;
+    }
+
+    .button {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #my_profile_info_detail {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #my_profile_img {
+        width: 50%;
+        padding: 10px;
+    }
+}
